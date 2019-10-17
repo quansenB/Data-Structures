@@ -57,7 +57,7 @@ class BinarySearchTreeTests(unittest.TestCase):
         self.assertTrue(v4 in arr)
         self.assertTrue(v5 in arr)
 
-def test_print_traversals(self):
+    def test_print_traversals(self):
         # WARNING:  Tests are for Print()
         # Debug calls to Print() in functions will cause failure
 
@@ -73,7 +73,7 @@ def test_print_traversals(self):
         self.bst.insert(4)
         self.bst.insert(2)
 
-        self.bst.in_order_print(self.bst)
+        self.bst.in_order_print() # self.bst
 
         output = sys.stdout.getvalue()
         self.assertEqual(output, "1\n2\n3\n4\n5\n6\n7\n8\n")

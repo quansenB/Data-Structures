@@ -82,8 +82,8 @@ class BinarySearchTree:
     # Print the value of every node, starting with the given node,
     # in an iterative breadth first traversal
     def bft_print(self, node):
-        if node != self.value:
-            if node < self.value:
+        if node.value != self.value:
+            if node.value < self.value:
                 if self.left != None:
                     self.left.bft_print(node)
             else:
@@ -95,8 +95,8 @@ class BinarySearchTree:
     # Print the value of every node, starting with the given node,
     # in an iterative depth first traversal
     def dft_print(self, node):
-        if node != self.value:
-            if node < self.value:
+        if node.value != self.value:
+            if node.value < self.value:
                 if self.left != None:
                     self.left.bft_print(node)
             else:
